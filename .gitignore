@@ -1,0 +1,14 @@
+# Lokale Entwicklungsdateien — nicht committen
+Plan.md
+Learnings.md
+claude-project-instructions.md
+
+# Audit-Log vom Post-Hook
+.devsecops-audit.log
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/settings.json
