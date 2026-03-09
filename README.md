@@ -1,4 +1,4 @@
-# 🛡️ CGI DevSecOps Agent Plugin
+# 🛡️ DevSecOps Agent Plugin
 
 > **Enterprise AI Agent Plugin für GitHub Copilot (VS Code & CLI)**
 >
@@ -84,7 +84,7 @@ User: "/pipeline"
 ## 📁 Plugin-Struktur
 
 ```
-cgi-devsecops-plugin/
+devsecops-plugin/
 ├── plugin.json                        # 📋 Plugin Manifest (required)
 ├── .mcp.json                          # 🔌 MCP Server Konfiguration
 ├── hooks.json                         # 🪝 Lifecycle Hooks
@@ -162,7 +162,7 @@ Alle MCP Server in diesem Plugin sind **offizielle Anthropic Reference Servers**
 {
   "chat.plugins.enabled": true,
   "chat.plugins.paths": [
-    "C:/Pfad/zu/cgi-devsecops-plugin"
+    "C:/Pfad/zu/devsecops-plugin"
   ]
 }
 ```
@@ -174,7 +174,7 @@ Alle MCP Server in diesem Plugin sind **offizielle Anthropic Reference Servers**
 {
   "chat.plugins.enabled": true,
   "chat.plugins.marketplaces": [
-    "cgi-org/cgi-devsecops-plugin"
+    "iljaleithold2207/github-copilot-agent-plugins"
   ]
 }
 ```
@@ -183,11 +183,11 @@ Alle MCP Server in diesem Plugin sind **offizielle Anthropic Reference Servers**
 
 ```bash
 # Direkt installieren
-copilot plugin install cgi-org/cgi-devsecops-plugin
+copilot plugin install iljaleithold2207/github-copilot-agent-plugins
 
 # Oder über Marketplace
-copilot plugin marketplace add cgi-org/cgi-devsecops-plugin
-copilot plugin install cgi-devsecops-toolkit@cgi-devsecops-marketplace
+copilot plugin marketplace add iljaleithold2207/github-copilot-agent-plugins
+copilot plugin install devsecops-toolkit@devsecops-marketplace
 ```
 
 ---
@@ -269,4 +269,4 @@ copilot plugin install cgi-devsecops-toolkit@cgi-devsecops-marketplace
 
 ---
 
-*Erstellt von Ilja Leithold · CGI AI Practice · März 2026*
+*Erstellt von Ilja Leithold · März 2026*

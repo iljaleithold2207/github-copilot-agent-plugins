@@ -1,16 +1,16 @@
 {
-  "name": "cgi-devsecops-marketplace",
+  "name": "devsecops-marketplace",
   "owner": {
-    "name": "CGI AI Practice",
-    "email": "ai-practice@cgi.com"
+    "name": "Ilja Leithold",
+    "email": "iljaleithold2207@users.noreply.github.com"
   },
   "metadata": {
-    "description": "CGI interne DevSecOps Agent Plugins für GitHub Copilot in VS Code und Copilot CLI",
+    "description": "DevSecOps Agent Plugins für GitHub Copilot in VS Code und Copilot CLI",
     "version": "1.0.0"
   },
   "plugins": [
     {
-      "name": "cgi-devsecops-toolkit",
+      "name": "devsecops-toolkit",
       "description": "Azure DevOps Pipeline-Automatisierung mit Security Scanning, Java-Container-Orchestrierung und Code-Quality-Enforcement",
       "version": "1.0.0",
       "source": "."

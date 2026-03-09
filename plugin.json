@@ -1,10 +1,10 @@
 {
-  "name": "cgi-devsecops-toolkit",
-  "description": "CGI DevSecOps Agent Plugin — Azure DevOps Pipeline-Automatisierung mit Security Scanning, Java-Container-Orchestrierung und Code-Quality-Enforcement",
+  "name": "devsecops-toolkit",
+  "description": "DevSecOps Agent Plugin für GitHub Copilot — Azure DevOps Pipeline-Automatisierung mit Security Scanning, Java-Container-Orchestrierung und Code-Quality-Enforcement",
   "version": "1.0.0",
   "author": {
     "name": "Ilja Leithold",
-    "email": "ilja.leithold@cgi.com"
+    "email": "iljaleithold2207@users.noreply.github.com"
   },
   "license": "MIT",
   "keywords": ["devsecops", "azure-devops", "security", "java", "containers", "enterprise"],
