@@ -1,0 +1,15 @@
+{
+  "name": "cgi-devsecops-toolkit",
+  "description": "CGI DevSecOps Agent Plugin — Azure DevOps Pipeline-Automatisierung mit Security Scanning, Java-Container-Orchestrierung und Code-Quality-Enforcement",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ilja Leithold",
+    "email": "ilja.leithold@cgi.com"
+  },
+  "license": "MIT",
+  "keywords": ["devsecops", "azure-devops", "security", "java", "containers", "enterprise"],
+  "agents": "agents/",
+  "skills": ["skills/pipeline-generator", "skills/security-scanner", "skills/container-ops"],
+  "hooks": "hooks.json",
+  "mcpServers": ".mcp.json"
+}

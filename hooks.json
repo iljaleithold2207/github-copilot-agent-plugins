@@ -1,0 +1,16 @@
+{
+  "hooks": [
+    {
+      "event": "preToolUse",
+      "tools": ["edit"],
+      "command": "echo '🔒 [Hook: preToolUse → edit] Prüfe auf hardcoded Secrets...' && if grep -rn -E '(password|secret|api[_-]?key|token|credential)\\s*[:=]\\s*[\"'\\'''][^\"'\\'']+[\"'\\''']' \"$TOOL_INPUT_PATH\" 2>/dev/null; then echo '⛔ BLOCKED: Hardcoded Secret erkannt! Nutze Azure DevOps Variable Groups oder Key Vault.' && exit 1; fi && echo '✅ Keine Secrets gefunden — Edit wird angewendet.'",
+      "description": "PRE-Hook: Scannt Code-Änderungen auf hardcoded Secrets BEVOR sie angewendet werden. Blockiert bei Fund (exit 1). Demonstriert wie Hooks als Policy-Enforcement wirken — vergleichbar mit einer Git Pre-Commit-Hook, aber auf Agent-Ebene."
+    },
+    {
+      "event": "postToolUse",
+      "tools": ["bash"],
+      "command": "echo \"[$(date -Iseconds)] AUDIT: bash command executed in $(pwd)\" >> .devsecops-audit.log",
+      "description": "POST-Hook: Loggt jeden Terminal-Befehl des Agents in ein Audit-Trail. Zeigt wie Enterprise-Compliance-Anforderungen (Nachvollziehbarkeit) automatisiert werden können."
+    }
+  ]
+}
